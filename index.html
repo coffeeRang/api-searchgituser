@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<!-- >> CSS
+============================================================================== -->
+<link href="a_data/bootstrap.css" rel="stylesheet">
+
+<!-- Google Web Fonts -->
+<link href="a_data/css.css" rel="stylesheet" type="text/css">
+
+<!-- Nivo Lightbox -->
+<link href="a_data/nivo-lightbox.css" rel="stylesheet">
+<link rel="stylesheet" href="a_data/default.css" type="text/css">
+<!-- /Nivo Lightbox -->
+
+  <!-- Perfect ScrollBar -->
+<link href="a_data/perfect-scrollbar.css" rel="stylesheet">
+
+<!-- owl carousel -->
+<link href="a_data/owl_002.css" rel="stylesheet">
+<link href="a_data/owl.css" rel="stylesheet">
+
+<!-- Main Styles -->
+<link href="a_data/styles.css" rel="stylesheet">
+
+<!-- user-card Styles -->
+<link href="a_data/user-card.css" rel="stylesheet">
+
+<!-- >> /CSS -->
+
+<style type="text/css">
+    /* 기본 설정*/
+    a{text-decoration:none; color:#000000;}         
+    a:hover{color:#ff0000;}                    
+
+    /* nav tag */
+    nav ul{padding-top:10px;}                     /*  상단 여백 10px  */
+    nav ul li {
+        display:inline;                         /*  세로나열을 가로나열로 변경 */
+        border-left:1px solid #999;             /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
+        font:bold 12px Dotum;                     /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
+        padding:0 10px;                         /* 각 메뉴 간격 */
+    }
+    nav ul li:first-child{border-left:none;}     /* 메뉴 분류중 제일 왼쪽의 "|"는 삭제*/
+
+</style>
+
+    <header>hello search git user project</header>
+    <body>
+
+
+        <div class="div_profile">
+            <input type="text" class="ipt_text" id="ipt_gitUserName"/>
+            <button type="button" class="btn_search" id="btn_search">조회</button>
+            <br>
+            <p>조회 결과</p>
+
+		<!-- SECTION: vCard Body  -->	
+		<div class="section-vcardbody section-home ps-container" id="section-home" data-ps-id="2de2f841-e981-c7e1-4b75-3f9b01c5ff94">
+            <!-- Profile pic-->
+            <div class="vcard-profile-pic">
+                <!-- <img src="a_data/profile.png" id="profile2" alt=""> -->
+                <!-- <img src="a_data/profile.png" id="profile1" class="profileActive" alt=""> -->
+                <img src="" id="profile1" class="profileActive" alt="">
+            </div>
+            <!-- /Profile pic -->
+
+            <!-- Description -->
+            <div class="vcard-profile-description">
+                <h1 class="profile-title"><span class="color1" id="githubNicname">username</span></h1>
+                <!-- Description Text -->
+                <hr class="hr1">
+                <div class="vcard-profile-description-text">
+                    <h2 class="profile-subtitle">
+                        Created At : &nbsp; 
+                        <div id="div_createdAt"></div>
+                    </h2>
+                    
+                    <div class="footer-social-icons">
+                        <nav>
+                            <ul>
+                                <li>Repos : <strong id="reposCnt"></strong></li>
+                                <li>Gists : <strong id="gistsCnt"></strong></li>
+                                <li>Followers : <strong id="followersCnt"></strong></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>	
+                <!--/ Description Text -->	
+            </div>
+
+            <!-- Footer -->		
+            <div class="vcard-footer"></div>
+            <!-- /Footer -->
+
+            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 4px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+            <!-- /SECTION: vCard Body  -->
+        </div>
+    </body>
+    <script src="./githubApi.js"></script>
+
+    
+</html>
+
